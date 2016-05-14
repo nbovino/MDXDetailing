@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nate.mdxdetailing.MainActivity"
-    android:background="@drawable/wheel">
+    android:background="@drawable/bg_water_droplets">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -17,7 +17,9 @@
         android:id="@+id/logo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_with_slogan"/>
+        android:src="@drawable/logo_with_slogan_transparent2"
+        android:alpha=".95"
+        />
 
     <LinearLayout
         android:orientation="vertical"
@@ -32,7 +34,7 @@
             android:layout_height="wrap_content"
             android:text="Interior Service"
             android:id="@+id/interiorService"
-            android:background="#000000"
+            android:background="#ad1253c8"
             android:textColor="#ffffffff"
             android:textSize="20dp"
             android:layout_margin="5dp"/>
@@ -42,7 +44,7 @@
             android:layout_height="wrap_content"
             android:text="Exterior Service"
             android:id="@+id/exteriorService"
-            android:background="#000000"
+            android:background="#ad1253c8"
             android:textColor="#ffffffff"
             android:textSize="20dp"
             android:layout_margin="5dp"/>
@@ -52,7 +54,7 @@
             android:layout_height="wrap_content"
             android:text="Ultimate Items"
             android:id="@+id/ultimateItems"
-            android:background="#000000"
+            android:background="#ad1253c8"
             android:textColor="#ffffffff"
             android:textSize="20dp"
             android:layout_margin="5dp"/>
@@ -62,7 +64,7 @@
             android:layout_height="wrap_content"
             android:text="Restoration Services"
             android:id="@+id/restorationServices"
-            android:background="#000000"
+            android:background="#ad1253c8"
             android:textColor="#ffffffff"
             android:textSize="20dp"
             android:layout_margin="5dp"/>

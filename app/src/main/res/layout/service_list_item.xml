@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Service Type"
+        android:id="@+id/serviceType"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="#d8001075"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is the best service you could ever want or need"
+        android:id="@+id/serviceShortDescription"
+        android:layout_below="@+id/serviceType"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#5bb7f4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultimate Glass Sealant&apos;s benefits and savings are clear while driving and while your vehicle is parked. How? First, Ultimate Glass Sealant makes it easy to clear ice, snow, frost, and dirt  from your vehicle&apos;s glass when you start your day. It even helps prevent frost build up! Second, while driving, Rain water flies off, road grime doesn&apos;t stick, and dangerous headlight glare is eliminated, to greatly improve driver visibility and safety, day and night! Third, you&apos;ll use less washer fluid, your wiper blades will last longer, and wiper chatter is fixed. This service includes deep cleaning and light polishing of glass to ensure optimal bonding. What&apos;s more, is that It completely bonds to vehicle glass for 6 Months! "
+        android:id="@+id/serviceDescription"
+        android:layout_below="@+id/serviceShortDescription"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#c3ffffff"
+        android:layout_marginBottom="30px"/>
+</RelativeLayout>
