@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nate.mdxdetailing.MainActivity"
-    android:background="@drawable/bg_water_droplets">
+    android:background="@drawable/bg_water_black">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -17,9 +17,7 @@
         android:id="@+id/logo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_with_slogan_transparent2"
-        android:alpha=".95"
-        />
+        android:src="@drawable/logo_with_slogan"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -34,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="Interior Service"
             android:id="@+id/interiorService"
-            android:background="#ad1253c8"
+            android:background="#ad000000"
             android:textColor="#ffffffff"
             android:textSize="20dp"
             android:layout_margin="5dp"/>
@@ -44,7 +42,7 @@
             android:layout_height="wrap_content"
             android:text="Exterior Service"
             android:id="@+id/exteriorService"
-            android:background="#ad1253c8"
+            android:background="#ad000000"
             android:textColor="#ffffffff"
             android:textSize="20dp"
             android:layout_margin="5dp"/>
@@ -54,7 +52,7 @@
             android:layout_height="wrap_content"
             android:text="Ultimate Items"
             android:id="@+id/ultimateItems"
-            android:background="#ad1253c8"
+            android:background="#ad000000"
             android:textColor="#ffffffff"
             android:textSize="20dp"
             android:layout_margin="5dp"/>
@@ -64,7 +62,7 @@
             android:layout_height="wrap_content"
             android:text="Restoration Services"
             android:id="@+id/restorationServices"
-            android:background="#ad1253c8"
+            android:background="#ad000000"
             android:textColor="#ffffffff"
             android:textSize="20dp"
             android:layout_margin="5dp"/>
@@ -72,12 +70,13 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Photos"
+            android:text="Descriptions"
             android:id="@+id/viewSwitch"
-            android:background="#ad1253c8"
+            android:background="#ad000000"
             android:textColor="#ffffffff"
             android:textSize="20dp"
             android:layout_margin="5dp"/>
+
     </LinearLayout>
 
 </RelativeLayout>

@@ -17,6 +17,10 @@
         </activity>
         <activity android:name=".ShowServicesActivity">
         </activity>
+        <activity android:name=".ShowPhotos">
+        </activity>
+        <activity android:name=".ShowPhotosActivity">
+        </activity>
     </application>
 
 </manifest>

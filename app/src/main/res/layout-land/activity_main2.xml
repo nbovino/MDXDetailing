@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nate.mdxdetailing.MainActivity"
+    android:background="@drawable/bg_water_droplets">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_with_slogan_transparent2"
+        android:alpha=".95"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="273dp"
+                android:layout_height="33dp"
+                android:text="Interior Service"
+                android:id="@+id/interiorService"
+                android:background="#ad1253c8"
+                android:textColor="#ffffffff"
+                android:textSize="20dp"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Exterior Service"
+                android:id="@+id/exteriorService"
+                android:background="#ad1253c8"
+                android:textColor="#ffffffff"
+                android:textSize="20dp"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Photos"
+                android:id="@+id/viewSwitch"
+                android:background="#ad1253c8"
+                android:textColor="#ffffffff"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Ultimate Items"
+                android:id="@+id/ultimateItems"
+                android:background="#ad1253c8"
+                android:textColor="#ffffffff"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:layout_width="256dp"
+                android:layout_height="33dp"
+                android:text="Restoration Services"
+                android:id="@+id/restorationServices"
+                android:background="#ad1253c8"
+                android:textColor="#ffffffff"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

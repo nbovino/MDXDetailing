@@ -12,6 +12,11 @@ public class Service implements Parcelable {
     private String mTypeOfService;
     private String mShortDescription;
     private String mDescription;
+    private String mPrice; // Will have to parseFloat to create an add package function that adds up cost.
+
+    public String getPrice() { return mPrice; }
+
+    public void setPrice(String price) { mPrice = price; }
 
     public String getTypeOfService() {
         return mTypeOfService;
@@ -33,9 +38,7 @@ public class Service implements Parcelable {
         return mShortDescription;
     }
 
-    public void setShortDescription(String shortDescription) {
-        mShortDescription = shortDescription;
-    }
+    public void setShortDescription(String shortDescription) { mShortDescription = shortDescription; }
 
     @Override
     public int describeContents() {
@@ -69,9 +72,9 @@ public class Service implements Parcelable {
         }
     };
 
-    public static Service[] getInteriorServices() {
+    public static Service[] makeInteriorServices() {
 
-        Service[] allInteriorServices = new Service[3];
+        Service[] allInteriorServices = new Service[5];
 
         Service expressInterior = new Service();
         expressInterior.setTypeOfService("Express Interior");
@@ -110,12 +113,40 @@ public class Service implements Parcelable {
                 "Leather Upholstery, Seams, and Stitching deeply cleaned, and conditioned. Includes UV protection.\u200B\u200B");
         allInteriorServices[2] = premiumInterior;
 
+        Service odorRemoval = new Service();
+        odorRemoval.setTypeOfService("Odor Removal");
+        odorRemoval.setShortDescription("");
+        odorRemoval.setDescription("Whether you've just purchased a used vehicle with an odor, your child spilled milk you didn't know about, or your pets seem to linger in your car after they leave, MDX can help. With Ozone treatment and proprietary odor removal systems your vehicle will smell like new in no time.\n" +
+                "Smoke Odor\n" +
+                "Old Food\n" +
+                "Musty or Mildew Odors\n" +
+                "Pet Odors\n" +
+                "and many more...\n");
+        allInteriorServices[3] = odorRemoval;
+
+        Service interiorAddOns = new Service();
+        interiorAddOns.setTypeOfService("Add-On Services");
+        interiorAddOns.setShortDescription("");
+        interiorAddOns.setDescription(
+                "Trim Conditioner and UV Protection \n" +
+                        "Steam Clean Trim / Hard Surfaces\n" +
+                        "Light Carpet Cleaning \n" +
+                        "Light Upholstery Cleaning \n" +
+                        "Light Leather Cleaning\n" +
+                        "Deep Carpet Cleaning \n" +
+                        "Deep Upholstery Cleaning \n" +
+                        "Deep Leather Cleaning\n" +
+                        "Carpet Guardian\n" +
+                        "Fabric Guardian \n" +
+                        "\u200BLeather Conditioner and UV Protection ");
+        allInteriorServices[4] = interiorAddOns;
+
         return allInteriorServices;
     }
 
-    public static Service[] getExteriorServices() {
+    public static Service[] makeExteriorServices() {
 
-        Service[] allExteriorServices = new Service[2];
+        Service[] allExteriorServices = new Service[4];
 
         Service expressExterior = new Service();
         expressExterior.setTypeOfService("Deluxe Exterior");
@@ -146,10 +177,29 @@ public class Service implements Parcelable {
                 "HydroSeal+PLUS  for slick, glossy, wet looking paint and up to 6 months of protection.");
         allExteriorServices[1] = deluxeExterior;
 
+        Service paintCorrection = new Service();
+        paintCorrection.setTypeOfService("Paint Correction");
+        paintCorrection.setShortDescription("");
+        paintCorrection.setDescription("Requires visual inspection and estimate. If your vehicle has seen better days and is in need of heavy paint correction or if you are looking for a show car finish this is the package you need. Will fix severe oxidation, water spots, acid rain damage, scratches, swirls, and orange peel. This is a 2 - 3 step buffing process with 6 to 16+ hours of labor involved.");
+        allExteriorServices[2] = paintCorrection;
+
+        Service exteriorAddOns = new Service();
+        exteriorAddOns.setTypeOfService("Add-On Items");
+        exteriorAddOns.setShortDescription("");
+        exteriorAddOns.setDescription("Premium Tire Dressing. Longer Lasting.\n" +
+                "Wheel Sealant\n" +
+                "\u200BHydroSeal+PLUS Sealant. 6 month durability. \n" +
+                "\u200BChip and Scratch Touchup \n" +
+                "\u200BUltimate Glass Sealant \n" +
+                "Ultimate Tire Coating\n" +
+                "Clay Bar Treatment and Decontamination. Recommended every 6 months - Removes above and below surface contaminants bonded to clearcoat that a wash alone cannot. (Accumalated brake dust, sap, tar, industrial pollution, is the cause of rough paint, orange spots, and eventual paint failure and surface rust) Prolongs the life of clearcoat.\n" +
+                "Hydro+Ultimate ceramic coating for up to 2 years of unmatched durability, scratch resistance, and enhanced gloss.");
+        allExteriorServices[3] = exteriorAddOns;
+
         return allExteriorServices;
     }
 
-    public static Service[] getUltimateItems() {
+    public static Service[] makeUltimateItems() {
         Service[] allUltimateItems = new Service[3];
 
         Service tireDressing = new Service();
